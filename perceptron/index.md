@@ -132,10 +132,9 @@ Let's give a look to our data (random sample):
 
 ### Requirements
 To build this model you should be familiar with **Python** classes and the library
-**Numpy**. The dataset we're working with can be found [here][1], and the original paper and dataset [here][2].
+**Numpy**. The dataset we're working with can be found [here][1].
 
-[1]: https://files.wmatrix.xyz/penguins/penguins.csv
-[2]: https://files.wmatrix.xyz/penguins/transformations.json
+[1]: https://www.deepmatrix.xyz/server/files/penguins.csv
 
 
 ## The perceptron structure:

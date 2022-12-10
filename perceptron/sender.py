@@ -33,7 +33,7 @@ cargo['body'] = markdown
 cargo['images'] = custom_dict
 
 
-r = httpx.post('http://127.0.0.1:8080/upload', json = cargo)
+r = httpx.post('https://deepmatrix.xyz/server/upload', json = cargo)
 print(r.status_code)
 print(r.json())
 
@@ -47,16 +47,14 @@ print(r.json())
 
 
 
-
-
-
-# ## REMOVE DIR
-# # payload = {
+# # remove dir
+# payload = {
     # "key": "zt4&sP&Z!6xnUw3txW2CG70r43OLW98M5UalZxw7w",
-    # "slug": "first-post-in-my-life",
+    # "slug": "the-perceptron-code-it-in-python",
 # }
 
-# r = httpx.post('http://127.0.0.1:8080/remove', json = payload)
+# r = httpx.post('https://www.deepmatrix.xyz/server/remove', json = payload)
+
 
 # print(r.status_code)
 # print(r.text)

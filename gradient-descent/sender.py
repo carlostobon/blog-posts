@@ -8,6 +8,10 @@ import base64
 
 custom_dict = dict()
 
+
+with open('info.json', 'r') as file:
+    cargo = json.load(file)
+
 files = glob.glob('./images/*')
 for file in files:
     with open(file, "rb") as binary_file:
@@ -25,43 +29,32 @@ markdown = ""
 for line in Lines:
     markdown += line
 
-cargo = {
-
-    "title":"Gradient dent algorithm in python 1.42",
-
-    "slug":"",
-
-    "description":"The easiest way to understand the gradient descent algorithm \
-        is coding it. Today I'll explain how it works and how to code it in Python.",
-
-    "body": markdown,
-
-    "keywords":"sgd machine learning, gradient descent machine learning, \
-        gradient descent deep learning, gradient descent from scratch, sgd from scratch",
-
-    "meta_description":"Understanding the gradient descent algorithm for \
-        machine learning in python, an example using a simple function.",
+cargo['body'] = markdown
+cargo['images'] = custom_dict
 
 
-    "category": ["Python", "DeepLearning", "Calculus", "MachineLearning"],
-
-    "images": custom_dict,
-}
-
-
-r = httpx.post('http://127.0.0.1:8080/upload', json = cargo)
+r = httpx.post('https://deepmatrix.xyz/server/upload', json = cargo)
 print(r.status_code)
 print(r.json())
 
 
 
-# ## REMOVE DIR
-# # payload = {
+
+
+
+
+
+
+
+
+# # remove dir
+# payload = {
     # "key": "zt4&sP&Z!6xnUw3txW2CG70r43OLW98M5UalZxw7w",
-    # "slug": "first-post-in-my-life",
+    # "slug": "gradient-descent-algorithm-in-python",
 # }
 
-# r = httpx.post('http://127.0.0.1:8080/remove', json = payload)
+# r = httpx.post('https://www.deepmatrix.xyz/server/remove', json = payload)
+
 
 # print(r.status_code)
 # print(r.text)

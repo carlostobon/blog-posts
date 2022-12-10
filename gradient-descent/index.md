@@ -19,7 +19,7 @@ contains a <em class="important-orange">global minimum</em>
 inside a parabolic shaped
 flat valley and finding it is not an easy task.
 
-we can describe the Rosenbrock function as:
+We can describe the Rosenbrock function as:
 
 <div class="math-div">
 
@@ -58,9 +58,9 @@ $$
 
 ### Gradient descent algorithm:
 
-Plese keep in mind that this method is an iterative one,
+Please keep in mind that this method is an iterative one,
 so to make it works we'll use loops and a random point
-as starting point. The algorith could be expressed as:
+as starting point. The algorithm may be expressed as:
 
 <div class="math-div">
 
@@ -76,7 +76,7 @@ In order to build the function's gradient we must
 first get its <em class="important-orange">derivatives</em>, 
 which can be written as:
 
-with respect to $x$:
+With respect to $x$:
 
 <div class="math-div">
 
@@ -86,7 +86,7 @@ $$
 
 </div>
 
-with respect to $y$:
+With respect to $y$:
 
 <div class="math-div">
 
@@ -118,7 +118,7 @@ what value is giving us the best results.
 
 When you're dealing with a complex model you may be forced to use a small $\alpha$,
 at least one really close to zero; working with small alphas will lead to a
-high computational cost, however, regular computers are powerfull enough
+high computational cost, however, regular computers are powerful enough
 to tackle this kind of tasks.
 
 ### Gradient-descent step by step
@@ -217,7 +217,7 @@ Now we need to add a method to the class in order to run the algorithm.
 ```
 
 This last piece of code is literally applying the 
-<em class="important-teal">five steps</em> neede to make
+<em class="important-teal">five steps</em> needed to make
 the algorithm works; we'll get into a loop that will last $10k$ iterations, on
 every iteration we calculate gradients and the function value, that way it's 
 possible to correct the location, that location will be the critic point we've 
@@ -261,7 +261,7 @@ iter 9998 : f(x, y) = 0.00004138 -> [0.997967 0.995930]
 iter 9999 : f(x, y) = 0.00004134 -> [0.997968 0.995932]
 ```
 
-As we said before, this function has a globan minium at $(x=1, y=1)$ where the
+As we said before, this function has a global minimum at $(x=1, y=1)$ where the
 function takes a value of $z=0$; What we did today is just a similar thing 
 of what we usually do when creating AI models, it wouldn't be the Rosenbrock
 function, but a loss function depending on the problem we're tackling.
@@ -269,4 +269,3 @@ function, but a loss function depending on the problem we're tackling.
 I hope you enjoyed this post. If you like playing with code and data, 
 there're some other posts here you may find interesting.
 
-````

@@ -1,8 +1,8 @@
 
 
-This post is a continuation, all code we'll be working with throughout this
-post was generated in this other post. Please, if you want to follow it,
-make sure you first check out the first part.
+%%This post is a continuation, all code we'll be working with throughout this
+%%post was generated in this other post. Please, if you want to follow it,
+%%make sure you first check out the first part.
 
 
 Once you've trained the [neural network][1] it's time to make it available for production, to get it done we'll be
@@ -27,14 +27,13 @@ To serialize the [net][2] we've trained using **pytorch**:
 [2]: <https://www.deepmatrix.xyz/posts/neural-network-from-scratch-in-python> ""
 
 
-```py
+```python
 # ./neural_network.py
 # torch has to be already imported
-# model is the NeuralNet() object
+# model = NeuraltNet() object
 torch.save(model.state_dict(), './model.pkl')
-```
 
-Once thea model is saved and you should see a **model.pkl** file in the current directory,
+Once the model is saved you should see a **model.pkl** file in the current directory,
 let's save the scalers:
 
 ```py

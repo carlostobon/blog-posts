@@ -1,14 +1,12 @@
 {
 
-"title":"The perceptron: Code it in python 3.3",
+"title":"The perceptron: Code it in python",
 
 "slug":"",
 
 "description":"When it comes to artificial intelligence it's almost impossible to not talk about the perceptron. Let's build a perceptron from scratch just using Numpy in Python.",
 
 "body":"",
-
-"category": "artificial-intelligence",
 
 "keywords":"perceptron in python, perceptron how it works, multilayer perceptron, mlp machine learning, mlp deep learning, perceptron from scratch",
 
