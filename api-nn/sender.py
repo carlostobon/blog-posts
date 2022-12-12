@@ -7,7 +7,7 @@ import json
 import base64
 from PIL import Image
 
-# custom_dict = dict()
+custom_dict = dict()
 
 
 # Transform images format
@@ -26,34 +26,34 @@ for image in images:
 
 
 
-# with open('info.json', 'r') as file:
-    # cargo = json.load(file)
+with open('info.json', 'r') as file:
+    cargo = json.load(file)
 
-# files = glob.glob('./images/*')
-# for file in files:
-    # with open(file, "rb") as binary_file:
-        # binary_data = binary_file.read()
-        # encoded = base64.b64encode(binary_data)
-        # to_send = encoded.decode('utf-8')
-        # custom_dict[os.path.basename(file)] = to_send
+files = glob.glob('./images/*')
+for file in files:
+    with open(file, "rb") as binary_file:
+        binary_data = binary_file.read()
+        encoded = base64.b64encode(binary_data)
+        to_send = encoded.decode('utf-8')
+        custom_dict[os.path.basename(file)] = to_send
 
-# with open('index.md', 'r') as file:
-    # Lines = file.readlines()
-    # file.close()
+with open('index.md', 'r') as file:
+    Lines = file.readlines()
+    file.close()
 
-# markdown = ""
+markdown = ""
 
-# for line in Lines:
-    # markdown += line
+for line in Lines:
+    markdown += line
 
-# cargo['body'] = markdown
-# cargo['images'] = custom_dict
+cargo['body'] = markdown
+cargo['images'] = custom_dict
 
 
-# # r = httpx.post('https://deepmatrix.xyz/server/upload', json = cargo)
+r = httpx.post('https://deepmatrix.xyz/server/upload', json = cargo)
 # r = httpx.post('http://localhost:8080/upload', json = cargo)
-# print(r.status_code)
-# print(r.json())
+print(r.status_code)
+print(r.json())
 
 
 
