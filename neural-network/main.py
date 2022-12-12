@@ -104,3 +104,5 @@ y_hat = y_scaler.inverse_transform(
 y_real = y_scaler.inverse_transform(
     y_test[[1, 18, 32, 68, 99]])
 
+
+
