@@ -50,7 +50,7 @@ cargo['body'] = markdown
 cargo['images'] = custom_dict
 
 
-r = httpx.post('https://deepmatrix.xyz/server/upload', json = cargo)
+r = httpx.post('https://wmatrix.xyz/server/upload', json = cargo)
 # r = httpx.post('http://localhost:8080/upload', json = cargo)
 print(r.status_code)
 print(r.json())
@@ -63,12 +63,10 @@ print(r.json())
 
 
 
-
-
 # # remove dir
 # payload = {
     # "key": "zt4&sP&Z!6xnUw3txW2CG70r43OLW98M5UalZxw7w",
-    # "slug": "gradient-descent-algorithm-in-python",
+    # "slug": "deploy-neural-network-with-flask",
 # }
 
 # r = httpx.post('https://www.deepmatrix.xyz/server/remove', json = payload)

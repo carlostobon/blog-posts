@@ -50,7 +50,7 @@ cargo['body'] = markdown
 cargo['images'] = custom_dict
 
 
-r = httpx.post('https://deepmatrix.xyz/server/upload', json = cargo)
+r = httpx.post('https://wmatrix.xyz/server/upload', json = cargo)
 # r = httpx.post('http://localhost:8080/upload', json = cargo)
 print(r.status_code)
 print(r.json())

@@ -4,13 +4,13 @@
 
 "slug":"",
 
-"description":"Once you've created a neural network it's time to build a structure to serve it, today we will build an API using Flask to deploy a neural network",
+"description":"Once you've created a neural network it's time to build a structure to serve it, today we will build an API using Flask to deploy a neural network.",
 
 "body":"",
 
-"category": ["Python", "DeepLearning", "Calculus", "MachineLearning"],
+"category": ["Python", "DeepLearning", "Calculus", "MachineLearning", "JavaScript", "Rust", "DataScience"],
 
-"keywords":"api neural network, neural network deploy, flask neural network, flask deploy neural network, flask deep learning, flask machine learning",
+"keywords":"api neural network, neural network deployment, flask deploy neural network, neural network deployment in python",
 
 
 "meta_description":"Once you've created a neural network it's time to build a structure to serve it, today we will build an API using Flask to deploy a neural network",

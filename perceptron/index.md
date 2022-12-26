@@ -134,7 +134,7 @@ Let's give a look to our data (random sample):
 To build this model you should be familiar with **Python** classes and the library
 **Numpy**. The dataset we're working with can be found [here][1].
 
-[1]: https://www.deepmatrix.xyz/server/files/penguins.csv
+[1]: </server/files/penguins.csv> ""
 
 
 ## The perceptron structure:

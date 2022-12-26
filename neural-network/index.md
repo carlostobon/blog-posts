@@ -307,9 +307,8 @@ However, you should know that building this kind of networks require three
 steps, <em class="important-teal">Forward-Propagation</em> (calculations from left to right - equations in the
 pic), <em class="important-orange">Loss-Function</em> (comparison between estimation and target) and
 <em class="important-teal">Back-Propagation</em> (weights correction - requires 
-gradients and [gradient-descent][3] algorithm).
-
-[3]: <https://deepmatrix.xyz/posts/gradient-descent-algorithm-in-python> ""
+gradients and <a href="/posts/gradient-descent-algorithm-in-python
+"></a> algorithm).
 
 
 With that being said, let's begin coding the network.
@@ -475,6 +474,8 @@ Now printing $y$ and it's estimation $\hat{y}$:
 ```
 
 As you see the network is doing pretty well. This network can now be saved using **pickle** and be transferred to the research department of the example, they will feed the network with different combinations and it'll return a pretty accurate prediction.
+
+In case you want to know how to deploy this network please read this <a href="/posts/deploy-neural-network-with-flask">post</a>.
 
 
 

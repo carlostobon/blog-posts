@@ -6,7 +6,7 @@ picture of this process, we'll optimize a
 function using **Numpy** and some basic calculus in **Python**.
 
 By optimizing I mean doing something pretty similar to what we
-do when we're building neural networks or just using a regular
+do when we're building <a href="/posts/neural-network-from-scratch-in-python">neural networks</a> or just using a regular
 machine learning model.
 
 ## The Rosenbrock function

@@ -7,7 +7,7 @@ your specific case.
 Once you've trained a neural network, it's time to make it available for production, to get it done we'll be
 creating an API with the framework **Flask** to serve the net. All you need to build this project is: 
 
-[1]: <https://deepmatrix.xyz/posts/neural-network-from-scratch-in-python> ""
+[1]: </posts/neural-network-from-scratch-in-python>
 
 
 - Net -> An already trained neural net.
@@ -28,7 +28,7 @@ saved as we normally do with regular files and be used later once is needed.
 
 To serialize the [network][2] we've trained using **pytorch**:
 
-[2]: <https://deepmatrix.xyz/posts/neural-network-from-scratch-in-python> ""
+[2]: </posts/neural-network-from-scratch-in-python> ""
 
 
 ```python
@@ -174,7 +174,7 @@ an give us the output in the original format.
 
 A brief explanation of what is the pipeline doing in the for us:
 
-<img src="imageone.png" alt="api flask neural network" />
+<img src="imageone.webp" alt="api flask neural network" />
 
 Adding the **pipeline** to **setter** file:
 

@@ -8,11 +8,11 @@
 
     "body": "",
 
-    "keywords":"sgd machine learning, gradient descent machine learning, gradient descent deep learning, gradient descent from scratch, sgd from scratch",
+    "keywords":"gradient descent, gradient descent machine learning, gradient descent deep learning, gradient descent from scratch",
 
-    "meta_description":"Understanding the gradient descent algorithm for machine learning in python, an example using a simple function.",
+    "meta_description":"An explanation about how the gradient descent algorithm works in python and how to code in python.",
 
-    "category": ["Python", "DeepLearning", "Calculus", "MachineLearning"],
+    "category": ["Python", "DeepLearning", "Calculus", "MachineLearning", "DataScience", "Rust", "JavaScript", "LinearAlgebra"],
 
     "images": ""
 }
